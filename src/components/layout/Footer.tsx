@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function Footer() {
     return (
         <footer className="font-clash px-10">
-            <span className="flex text-[11.5vw] font-bold text-black-400">
+            <span className="flex text-[11.5vw] font-bold text-black-400 mb-[-1rem]">
                 enzobeystudio*
             </span>
 
