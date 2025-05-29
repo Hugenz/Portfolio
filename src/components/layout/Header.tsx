@@ -5,7 +5,7 @@ export default function Header() {
         <header className="text-black px-10 pt-10">
             <div className="grid grid-cols-3 grid-rows-2 gap-0">
                 <div className="col-start-1 col-end-2 row-start-1 row-end-2">
-                    <div className="flex flex-col text-[9px]">
+                    <div className="flex flex-col text-[9px] md:text-[17px]">
                         <Link href="/">
                             <span className="uppercase font-bold">
                                 bey enzo
@@ -17,7 +17,7 @@ export default function Header() {
                 </div>
                 <div className="col-start-2 col-end-3 row-start-1 row-end-2"></div>
                 <div className="col-start-3 col-end-4 row-start-1 row-end-2">
-                    <div className="flex gap-4 text-[9px] uppercase font-medium">
+                    <div className="flex justify-end gap-4 text-[9px] md:text-[17px] uppercase font-medium">
                         <Link href="/about">
                             <span>about</span>
                         </Link>
