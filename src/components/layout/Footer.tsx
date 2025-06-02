@@ -4,10 +4,6 @@ import { ArrowUpRight } from "lucide-react";
 export default function Footer() {
     return (
         <footer className="font-clash px-10">
-            <span className="text-[10.5vw] md:text-[11.5vw] font-bold text-black-400 mb-[-1rem] justify-center">
-                enzobeystudio*
-            </span>
-
             <div
                 className="flex flex-col items-center justify-center gap-4 pt-6 md:pt-0
                      md:flex-row sm:justify-between text-lg font-medium"
