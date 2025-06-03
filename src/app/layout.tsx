@@ -42,7 +42,7 @@ export default function RootLayout({
         >
             <body className="font-sans antialiased min-h-screen flex flex-col">
                 <Header />
-                <main className="flex-1 flex flex-col justify-center items-center px-10 md:px-32">
+                <main className="flex-1 flex flex-col justify-center items-center overflow-hidden px-10 md:px-0">
                     {children}
                 </main>
                 <Footer />
