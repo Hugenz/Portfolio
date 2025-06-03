@@ -73,7 +73,7 @@ export default function HomePage() {
 
     if (error) {
         return (
-            <div className="px-4 md:px-12 mt-8">
+            <div className="px-10 md:px-32 mt-8">
                 <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
                     <strong>Erreur :</strong> {error}
                 </div>
@@ -82,8 +82,8 @@ export default function HomePage() {
     }
 
     return (
-        <div className="px-4 md:px-12">
-            <div className="mb-4 text-sm text-gray-600">
+        <>
+            {/*<div className="mb-4 text-sm text-gray-600">
                 {loading
                     ? "Chargement en cours..."
                     : `${projects.length} projets trouvés${
@@ -92,6 +92,7 @@ export default function HomePage() {
                               : ""
                       }`}
             </div>
+            8/}
 
             {/* Grille de projets */}
             {loading ? (
@@ -111,15 +112,18 @@ export default function HomePage() {
                             key={`${proj.category}-${proj.project}`}
                             className="flex flex-col items-center group cursor-pointer"
                         >
-                            <img
-                                src={proj.cover.url}
-                                alt={proj.project}
-                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                onError={(e) => {
-                                    e.currentTarget.src =
-                                        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='100%25' height='100%25' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%236b7280'%3EImage non disponible%3C/text%3E%3C/svg%3E";
-                                }}
-                            />
+                            <div className="w-auto h-[400px] md:w-[240px] md:h-[320px] shadow-md overflow-hidden group-hover:shadow-lg transition-shadow">
+                                <img
+                                    src={proj.cover.url}
+                                    alt={proj.project}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                    onError={(e) => {
+                                        e.currentTarget.src =
+                                            "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='320'%3E%3Crect width='100%25' height='100%25' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%236b7280'%3EImage non disponible%3C/text%3E%3C/svg%3E";
+                                    }}
+                                />
+                            </div>
+                            {/*
                             <div className="mt-4 text-xl font-semibold capitalize text-center">
                                 {proj.project
                                     .replace(
@@ -132,10 +136,14 @@ export default function HomePage() {
                             <div className="text-sm text-gray-500 capitalize">
                                 {proj.category}
                             </div>
+                            */}
                         </div>
                     ))}
                 </div>
             )}
-        </div>
+            <span className="text-[10.5vw] md:text-[11.5vw] font-bold text-black-400 mb-[-1rem] justify-center font-clash">
+                enzobeystudio*
+            </span>
+        </>
     );
 }

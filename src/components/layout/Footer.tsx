@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer className="font-clash px-10">
+        <footer className="font-clash px-10 pb-10">
             <div
                 className="flex flex-col items-center justify-center gap-4 pt-6 md:pt-0
                      md:flex-row sm:justify-between text-lg font-medium"

@@ -40,9 +40,11 @@ export default function RootLayout({
             lang="fr"
             className={`${roboto.variable} ${clashDisplay.variable}`}
         >
-            <body className="font-sans antialiased">
+            <body className="font-sans antialiased min-h-screen flex flex-col">
                 <Header />
-                {children}
+                <main className="flex-1 flex flex-col justify-center items-center px-10 md:px-32">
+                    {children}
+                </main>
                 <Footer />
             </body>
         </html>
