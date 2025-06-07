@@ -150,7 +150,7 @@ export default function HomePage() {
                                         href={`/project/${proj.category}/${proj.project}`}
                                         className="block w-full h-full"
                                     >
-                                        <div className="w-[240px] h-[320px] rounded-xl shadow-md overflow-hidden group-hover:shadow-lg transition-shadow relative">
+                                        <div className="w-[240px] h-[320px] overflow-hidden group-hover:shadow-lg transition-shadow relative">
                                             <img
                                                 src={proj.cover.url}
                                                 alt={proj.project}

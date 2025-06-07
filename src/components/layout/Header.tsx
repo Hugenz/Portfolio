@@ -39,7 +39,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="col-start-1 col-end-4 row-start-2 row-end-3 md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2text-black/40">
-                    <div className="flex font-medium text-[11px] uppercase gap-3 pt-10 pb-6 md:pt-0 md:pb-0 md:flex-row md:gap-6 md:justify-center md:items-start">
+                    <div className="flex font-medium text-[13px] uppercase gap-3 pt-10 pb-6 md:pt-0 md:pb-0 md:flex-row md:gap-6 md:justify-center md:items-start">
                         <div className="hidden md:flex flex-col items-end flex-shrink-0">
                             <span className="text-black uppercase">
                                 projects

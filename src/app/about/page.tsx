@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function About() {
     return (
-        <div className="flex flex-col px-10 md:px-32">
+        <div className="flex flex-col md:px-32">
             <p className="uppercase text-[8px] pb-4 md:pb-20 md:text-[19px]">
                 Je m'appelle Enzo, photographe passionné et étudiant en design
                 graphique à Lyon.<br></br>Mon parcours dans le graphisme, l'UI
